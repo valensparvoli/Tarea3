@@ -57,6 +57,7 @@ li{
 }
 .horarios{
     font-style: italic;
+    font-size: 2rem;
 }
 .titulosTablas{
     background-color: rgb(255, 169, 10);
