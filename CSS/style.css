@@ -1,68 +1,94 @@
 /*CSS modifica el estilo*/
-*{
-    margin: 0; 
-    padding: 0; /*da espacio al elemento desde los bordes*/
-    box-sizing: border-box ;
-    background-color: rgba(241, 211, 167, 0.788);
-
+* {
+  margin: 0;
+  padding: 0; /*da espacio al elemento desde los bordes*/
+  box-sizing: border-box;
+  background-color: rgba(241, 211, 167, 0.788);
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
 /* Logo optica*/
-.logo{
-    margin: 0rem 37rem;
-    background-color: rgb(222, 184, 135);
+.logo {
+  margin: 0rem 37rem;
+  background-color: rgb(222, 184, 135);
 }
 
-.tituloPagina{
-    margin: 0;
-    background-color: rgb(222, 184, 135);
-    font-weight: bold;
+.tituloPagina {
+  margin: 0;
+  background-color: rgb(222, 184, 135);
+  font-weight: bold;
 }
 
-ul{
-    list-style-type: none;
+/* Estilos Header */
+.headerTittle {
+  margin: 1rem 20rem;
+  background-color: coral;
+  text-align: center;
+  border-radius: 10px;
 }
 
-li{
-    float: left;
-    background-color: rgb(222, 184, 135);
-    text-align: center;
-    width: 17em;
-    border: 1px solid rgb(153, 92, 0);
+/* Estilo textos y titulos */
+.textoIndex {
+  background-color: white;
+  margin: 1rem 25rem;
+  border: 2px groove rgb(153, 92, 0);
+  text-align: center;
+  text-shadow: 2px 2px 5px white;
 }
 
-
-.tituloIndex{
-    margin: 1rem 20rem;
-    background-color: coral;
-    text-align: center; 
-    border-radius: 10px;
-}
-
-.textoIndex{
-    background-color: white;
-    margin: 1rem 25rem;
-    border: 2px groove rgb(153, 92, 0);
-    text-align: center;
-    text-shadow: 2px 2px 5px white;
-
-}
 /* Horarios de atencion*/
-.dias{
-    font-weight: bold;
+.dias {
+  font-weight: bold;
 }
-.horarios{
-    font-style: italic;
-    font-size: 2rem;
+.horarios {
+  font-style: italic;
+  font-size: 2rem;
 }
-.titulosTablas{
-    background-color: rgb(255, 169, 10);
-    font-style: italic;
+
+/* Estilo tablas */
+.titulosTablas {
+  background-color: rgb(255, 169, 10);
+  font-style: italic;
 }
-.tabla{
-    background-color: white;
+.tabla {
+  background-color: white;
+}
+
+/* Pagina general */
+body {
+  /*Forma de llevar el footer al fondo*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  /*Forma de llevar el footer al fondo*/
+  margin-top: auto;
+}
+
+nav {
+  margin-top: 10px;
+  background-color: rgb(204, 149, 77);
+  width: 100%;
+  padding: 0.5rem;
+
+  position: sticky;
+  top: 0;
+}
+
+.textBox {
+  background-color: white;
+  border: 2px groove rgb(153, 92, 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Titulos en general */
+.tittle {
 }
