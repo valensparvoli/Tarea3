@@ -3,17 +3,22 @@
   margin: 0;
   padding: 0; /*da espacio al elemento desde los bordes*/
   box-sizing: border-box;
-  background-color: rgba(241, 211, 167, 0.788);
+  color: #fff;
 }
 
 h1 {
   text-align: center;
 }
 
+/* clases flex*/
+.flex {
+  display: flex;
+}
+
 /* Logo optica*/
-.logo {
-  margin: 0rem 37rem;
-  background-color: rgb(222, 184, 135);
+.logoOptica {
+  width: 100px;
+  border-radius: 50%;
 }
 
 .tituloPagina {
@@ -22,12 +27,35 @@ h1 {
   font-weight: bold;
 }
 
+/* Estilo body*/
+body {
+  background-image: url("/img/patronImagenes.jpg");
+
+  /*Forma de llevar el footer al fondo*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Estilos Header */
-.headerTittle {
-  margin: 1rem 20rem;
-  background-color: coral;
-  text-align: center;
-  border-radius: 10px;
+header {
+  background: #0e0e0e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  margin: 1rem 1rem;
+}
+
+.headerText {
+  margin: 2rem;
 }
 
 /* Estilo textos y titulos */
@@ -37,6 +65,74 @@ h1 {
   border: 2px groove rgb(153, 92, 0);
   text-align: center;
   text-shadow: 2px 2px 5px white;
+}
+
+/* Pagina general */
+
+footer {
+  /*Forma de llevar el footer al fondo*/
+  margin-top: auto;
+  color: #0e0e0e;
+}
+
+nav {
+  background-color: #363636;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modificaciones en la barra de navegacion*/
+.navBar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li {
+  display: block;
+  color: #0e0e0e;
+  padding: 8px 16px;
+  text-decoration: none;
+  /*
+  list-style: none;
+  padding: 4px;
+  background: #b8b8b8;
+  border-radius: 4px;
+  */
+}
+
+li:hover {
+  background-color: #555;
+  color: white;
+
+  /*Efecto de animacion*/
+  /*
+  transform: translateY(-2px);
+  box-shadow: -4px 4px #6b6b6b;
+  transition: all 300ms;
+  */
+}
+
+/* Modificaciones en el body*/
+.textBox {
+  background-color: white;
+  border: 2px groove rgb(153, 92, 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Horarios de atencion*/
@@ -55,40 +151,4 @@ h1 {
 }
 .tabla {
   background-color: white;
-}
-
-/* Pagina general */
-body {
-  /*Forma de llevar el footer al fondo*/
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  /*Forma de llevar el footer al fondo*/
-  margin-top: auto;
-}
-
-nav {
-  margin-top: 10px;
-  background-color: rgb(204, 149, 77);
-  width: 100%;
-  padding: 0.5rem;
-
-  position: sticky;
-  top: 0;
-}
-
-.textBox {
-  background-color: white;
-  border: 2px groove rgb(153, 92, 0);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Titulos en general */
-.tittle {
 }
