@@ -31,6 +31,25 @@ body {
   flex-direction: column;
 }
 
+.pAnimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 /* Estilos Header */
 header {
   background: #0e0e0e;
@@ -65,14 +84,21 @@ header {
 
 footer {
   /*Forma de llevar el footer al fondo*/
-  padding: 10px;
+  padding: 20px;
   margin-top: auto;
   background-color: #0e0e0e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
+.socialNetWork {
+  display: flex;
+  justify-content: center;
+  align-self: end;
+}
+.copyRight {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
 nav {
   background-color: #363636;
   width: 100%;
@@ -124,41 +150,27 @@ li:hover {
 }
 
 /* Modificaciones en el body*/
-.tittle{
+.tittle {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: typing 4s steps(38) 
-  1s 1 normal both, blink 1s steps(1) infinite;
 }
 
 .textBox {
-  border: 1px solid black;
+  padding: 1px;
+  /*width: auto;*/
+  /*border: 1px solid black;*/
+  outline: solid black;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.text{
+.text {
   color: black;
 }
-
-@keyframes typing{
-  from{
-    width: 0;
-  }
-  to{
-    width: 100%;
-  }
-}
-@keyframes blink {
-  50%{
-    border-color: transparent;
-  }
-}
-
 /* Horarios de atencion*/
-.dias {
+.day {
   font-weight: bold;
 }
 .horarios {
@@ -176,7 +188,7 @@ li:hover {
 }
 
 /* Formato del form */
-.formFormat{
+.formFormat {
   border: 1px solid black;
   width: 100%;
   max-width: 600px;
@@ -186,15 +198,22 @@ li:hover {
   justify-content: center;
   align-items: center;
 }
-.formFormat input{
+.formFormat input {
   width: 90%;
   height: 30px;
   margin: 0.5rem;
 }
-.formFormat button{
+.formFormat button {
   padding: 0.5em 1em;
   border: none;
   background: rgb(100, 200, 255);
   cursor: pointer;
 }
 
+/* Formato de la tabla*/
+
+.tableBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

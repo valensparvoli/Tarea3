@@ -6,67 +6,71 @@
     <link rel="stylesheet" href="../CSS/style.css">
 
 </head>
-<body bgcolor="antiquewhite">
-    <header>
-        <h1 class="headerTittle"><img src="../img/LogoOptica.jpg" height="100" width="200" alt="" class="logo">Optica centro</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./contactos.html">Contactos</a> </li>
-                <li><a href="./horariosDeAtencion.html">Horarios de atencion</a></li>
-                <li><a href="./ubicacion.html"> Donde nos encontramos</a></li>
-                <li><a href="./catalogo.html">Catalogo</a></li>
-            </ul>
-        </nav>
+<body class="flex">
+    <header class="flex">
+        <div class="header flex">
+          <img src="../img/opticaLogo.png" alt="Logo" class="logoOptica" />
+          <h1 class="headerText">Optica centro</h1>
+        </div>
     </header>
+    <nav class="flex">
+        <!--barra de navegacion-->
+        <ul class="navBar">
+          <!--crea listas--->
+          <li class="navBarItem"><a href="/index.html" class="navBarLink">Inicio</a></li>
+          <li class="navBarItem"><a href="./page/contactos.html" class="navBarLink">Contactos</a></li>
+          <li class="navBarItem"><a href="./page/horariosDeAtencion.html" class="navBarLink">Horarios de atencion</a></li>
+          <li class="navBarItem"><a href="./page/ubicacion.html" class="navBarLink">Donde nos encontramos</a></li>
+          <li class="navBarItem"><a href="./page/catalogo.html" class="navBarLink">Catalogo</a></li>
+        </ul>
+    </nav>
     <main>
-        <section>
-            <center>
-                <br>
-                <Table border="1">
-                    <h2 class="tituloIndex">Horarios de atencion</h2>
-                    <tr>
-                        <td><strong><i>Dias</strong></i></td>
-                        <td><i><strong>Horarios de mañana</strong></i></td>
-                        <td><i><strong>Horarios de tarde</strong></i></td>
-                    </tr>
-                    <tr>
-                        <td class="dias" style="color: rgb(199, 90, 71);">Lunes</td>
-                        <td class="horarios" style="color: rgb(199, 90, 71);">Desde las 8:30 <br>hasta las 13:00</td>
-                        <td class="horarios" style="color: rgb(199, 90, 71);"> Desde las 16:30 <br> hasta las 20:00</td>
-                    </tr>
-                    <tr>
-                        <td class="dias" style="color: rgb(230, 128, 110);" >Martes</td>
-                        <td class="horarios" style="color: rgb(230, 128, 110);" >Desde las 8:30 <br> hasta las 13:00</td>
-                        <td class="horarios" style="color: rgb(230, 128, 110);" > Desde las 16:30 <br> hasta las 20:00</td>
-                    </tr>
-                    <tr>
-                        <td class="dias" style="color: rgb(70, 211, 70);" > Miercoles</td>
-                        <td class="horarios" style="color: rgb(70, 211, 70);"> Desde las 8:30 <br> hasta las 13:00</td>
-                        <td class="horarios" style="color: rgb(70, 211, 70);" > Desde las 17:30 <br> hasta las 20:30</td>
-                    </tr>
-                    <tr>
-                        <td class="dias" style="color: rgb(100, 51, 192);">Jueves</td>
-                        <td class="horarios" style="color: rgb(100, 51, 192);">Desde las 8:30 <br> hasta las 13:00</td>
-                        <td class="horarios" style="color: rgb(100, 51, 192);">Desde las 16:30 <br> hasta las 20:00</td>
-                    </tr>
-                    <tr>
-                        <td class="dias" style="color: rgb(196, 26, 173);">Viernes</td>
-                        <td class="horarios" style="color: rgb(196, 26, 173);">Desde las 8:30 <br> hasta las 13:00</td>
-                        <td class="horarios" style="color: rgb(196, 26, 173);">Desde las 16:30 <br> hasta las 20:00</td>
+        <article>
+            <br>
+            <Table border="2" class="tableBox">
+                <h2 class="tittle text">Horarios de atencion</h2>
+                <tr>
+                    <td><strong><i>Dias</strong></i></td>
+                    <td><i><strong>Horarios de mañana</strong></i></td>
+                    <td><i><strong>Horarios de tarde</strong></i></td>
+                </tr>
+                <tr>
+                    <td class="day" style="color: rgb(199, 90, 71);">Lunes</td>
+                    <td class="horarios" style="color: rgb(199, 90, 71);">Desde las 8:30 <br>hasta las 13:00</td>
+                    <td class="horarios" style="color: rgb(199, 90, 71);"> Desde las 16:30 <br> hasta las 20:00</td>
+                </tr>
+                <tr>
+                    <td class="day" style="color: rgb(230, 128, 110);" >Martes</td>
+                    <td class="horarios" style="color: rgb(230, 128, 110);" >Desde las 8:30 <br> hasta las 13:00</td>
+                    <td class="horarios" style="color: rgb(230, 128, 110);" > Desde las 16:30 <br> hasta las 20:00</td>
+                </tr>
+                <tr>
+                    <td class="day" style="color: rgb(70, 211, 70);" > Miercoles</td>
+                    <td class="horarios" style="color: rgb(70, 211, 70);"> Desde las 8:30 <br> hasta las 13:00</td>
+                    <td class="horarios" style="color: rgb(70, 211, 70);" > Desde las 17:30 <br> hasta las 20:30</td>
+                </tr>
+                <tr>
+                    <td class="day" style="color: rgb(100, 51, 192);">Jueves</td>
+                    <td class="horarios" style="color: rgb(100, 51, 192);">Desde las 8:30 <br> hasta las 13:00</td>
+                    <td class="horarios" style="color: rgb(100, 51, 192);">Desde las 16:30 <br> hasta las 20:00</td>
+                </tr>
+                <tr>
+                    <td class="day" style="color: rgb(196, 26, 173);">Viernes</td>
+                    <td class="horarios" style="color: rgb(196, 26, 173);">Desde las 8:30 <br> hasta las 13:00</td>
+                    <td class="horarios" style="color: rgb(196, 26, 173);">Desde las 16:30 <br> hasta las 20:00</td>
 
-                    </tr>
-                    <tr>
-                        <td class="dias" style="color: rgb(128, 18, 60);">Sabado</td>
-                        <td class="horarios" style="color: rgb(128, 18, 60);">Desde las 10:00 <br> hasta las 13:00</td>
-                        <td class="horarios" style="color: rgb(128, 18, 60);">Desde las 18:00 <br> hasta las 20:00</td>
-                    </tr>
-                    <tr>
-                        <td class="dias" style="color: red;">Domingo</td>
-                        <td class="horarios" colspan="2" style="color: red;"> No abrimos</td>
-                    </tr>
-            
-                </Table></center>
+                </tr>
+                <tr>
+                    <td class="day" style="color: rgb(128, 18, 60);">Sabado</td>
+                    <td class="horarios" style="color: rgb(128, 18, 60);">Desde las 10:00 <br> hasta las 13:00</td>
+                    <td class="horarios" style="color: rgb(128, 18, 60);">Desde las 18:00 <br> hasta las 20:00</td>
+                </tr>
+                <tr>
+                    <td class="day" style="color: red;">Domingo</td>
+                    <td class="horarios text" colspan="2" style="color: red;"> No abrimos</td>
+                </tr>
+            </Table>
+        </article>
         </section>
     </main>
 </body>
