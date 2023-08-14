@@ -21,12 +21,6 @@ h1 {
   border-radius: 50%;
 }
 
-.tituloPagina {
-  margin: 0;
-  background-color: rgb(222, 184, 135);
-  font-weight: bold;
-}
-
 /* Estilo body*/
 body {
   background-image: url("/img/patronImagenes.jpg");
@@ -71,8 +65,12 @@ header {
 
 footer {
   /*Forma de llevar el footer al fondo*/
+  padding: 10px;
   margin-top: auto;
-  color: #0e0e0e;
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
@@ -97,7 +95,7 @@ ul {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #7d7d7d;
 }
 
 li {
@@ -126,13 +124,21 @@ li:hover {
 }
 
 /* Modificaciones en el body*/
+.tittle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .textBox {
-  background-color: white;
-  border: 2px groove rgb(153, 92, 0);
+  border: 1px solid black;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.text{
+  color: black;
 }
 
 /* Horarios de atencion*/
@@ -152,3 +158,27 @@ li:hover {
 .tabla {
   background-color: white;
 }
+
+/* Formato del form */
+.formFormat{
+  border: 1px solid black;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formFormat input{
+  width: 90%;
+  height: 30px;
+  margin: 0.5rem;
+}
+.formFormat button{
+  padding: 0.5em 1em;
+  border: none;
+  background: rgb(100, 200, 255);
+  cursor: pointer;
+}
+
