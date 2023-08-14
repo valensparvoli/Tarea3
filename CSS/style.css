@@ -128,6 +128,8 @@ li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: typing 4s steps(38) 
+  1s 1 normal both, blink 1s steps(1) infinite;
 }
 
 .textBox {
@@ -139,6 +141,20 @@ li:hover {
 }
 .text{
   color: black;
+}
+
+@keyframes typing{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50%{
+    border-color: transparent;
+  }
 }
 
 /* Horarios de atencion*/
