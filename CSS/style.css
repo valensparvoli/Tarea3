@@ -19,8 +19,7 @@
 
 /* Estilo body*/
 body {
-  background-image: url("/img/patronImagenes.jpg");
-
+  background-image: url(../img/patronImagenes.jpg);
   /*Forma de llevar el footer al fondo*/
   min-height: 100vh;
   display: flex;
@@ -79,14 +78,16 @@ footer {
 }
 
 .socialNetWork {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
-  justify-content: center;
-  align-self: end;
+  justify-content: space-around;
+  align-content: space-between;
 }
 .copyRight {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-content: end;
 }
 
 /* Modificaciones en la barra de navegacion*/
@@ -157,9 +158,9 @@ li:hover {
 /* Modificaciones de imagenes */
 .opticaImg{
   filter: grayscale(10%);
-  width: 1920px;
+  width: 100%;
   max-width: 100%;
-  height: 800px;
+  height: auto;
   z-index: auto;
   /*height: auto;*/
 
@@ -180,6 +181,7 @@ div.desc{
   padding: 15px;
   text-align: center;
   color: #0e0e0e;
+  background-color: #fff;
 }
 .responsive{
   padding: 0.6px;
@@ -205,11 +207,43 @@ div.desc{
   clear: both;
 }
 .productoImg{
+  display: block;
   width: 600px;
   height: 400px;
 }
+/* Hover overlay en las imagenes de la galeria*/
+.container{
+  position: relative;
+}
+.overlay{
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.container:hover .overlay{
+  height: 100%;
+}
+.textOverlay{
+  white-space: nowrap;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 /* Modificaciones en el body*/
 .tittle {
+  color: #0e0e0e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,4 +309,16 @@ div.desc{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.whiteBackground{
+  background-color: #fff;
+}
+
+.greyBorder{
+  border: 5px solid #555;
+}
+
+.tittleBackground{
+  background-color: #fff;
 }
