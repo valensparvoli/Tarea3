@@ -79,7 +79,7 @@ footer {
 
 .socialNetWork {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   display: flex;
   justify-content: space-around;
   align-content: space-between;
@@ -100,7 +100,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  z-index: 1000;
 }
 
 .navBar {
