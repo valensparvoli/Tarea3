@@ -197,7 +197,19 @@ div.desc{
 
 @media only screen and (max-width: 500px){
   .responsive{
-    width: 100%;
+    width: 70%;
+
+  }
+  .galerry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 400px ){
+  .responsive{
+    width: 50%;
   }
 }
 
@@ -322,3 +334,12 @@ div.desc{
 .tittleBackground{
   background-color: #fff;
 }
+
+/* Carrusel de imagenes */
+
+div.carousel-inner{
+  width: 100%;
+  max-width: 100%;
+  height:auto;
+}
+
