@@ -6,6 +6,10 @@
   color: #fff;
 }
 
+:root{/*Declararemos variables adentro*/
+  --text--primary: #0e0e0e;
+}
+
 /* clases flex*/
 .flex {
   display: flex;
@@ -168,8 +172,8 @@ li:hover {
 
 /*Galeria de imagenes*/
 div.gallery{
-  border: 1px solid #ccc;
-}
+  /*border: 1px solid #ccc;*/
+  box-shadow: 10px 10px 5px rgb(124, 124, 124)}
 div.gallery:hover{
   border: 1px solid #777;
 }
@@ -178,10 +182,14 @@ div.gallery img{
   height: auto;
 }
 div.desc{
+  backdrop-filter: blur(10px);
   padding: 15px;
-  text-align: center;
+  /*text-align: center;*/
+  display: flex;
+  justify-content: start;
+  align-items: center;
   color: #0e0e0e;
-  background-color: #fff;
+  background-color: #ffffff38;
 }
 .responsive{
   padding: 0.6px;
@@ -272,7 +280,7 @@ div.desc{
   align-items: center;
 }
 .text {
-  color: black;
+  color: var(--text--primary);
 }
 /* Horarios de atencion*/
 .day {
@@ -342,4 +350,7 @@ div.carousel-inner{
   max-width: 100%;
   height:auto;
 }
-
+ 
+.arrowCarrousel{
+  font-size: 50px;
+}
