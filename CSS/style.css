@@ -104,11 +104,25 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*height: 5rem;*/
   z-index: 1000;
+
+  /* animacion para cambiar la transparencia
+  */
+  animation: adjust-header linear;
+  animation-timeline: scroll();
+  animation-range: 0 200;
+}
+
+@keyframes adjust-header{
+  to{
+    background: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+  }
 }
 
 .navBar {
-  backdrop-filter: blur(10px);
+  /*backdrop-filter: blur(10px);*/
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -144,6 +158,7 @@ li a{
 }
 
 li:hover {
+  
   background-color: #555;
   color: white;
 
@@ -156,7 +171,7 @@ li:hover {
 }
 .activate{
   background-color: #555 ;
-  
+  /*height: 80px;*/
 }
 
 /* Modificaciones de imagenes */
@@ -173,7 +188,8 @@ li:hover {
 /*Galeria de imagenes*/
 div.gallery{
   /*border: 1px solid #ccc;*/
-  box-shadow: 10px 10px 5px rgb(124, 124, 124)}
+  box-shadow: 10px 10px 5px rgb(124, 124, 124)
+}
 div.gallery:hover{
   border: 1px solid #777;
 }
@@ -182,7 +198,7 @@ div.gallery img{
   height: auto;
 }
 div.desc{
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   padding: 15px;
   /*text-align: center;*/
   display: flex;
@@ -353,4 +369,30 @@ div.carousel-inner{
  
 .arrowCarrousel{
   font-size: 50px;
+}
+
+
+/* VIDEOS */
+.videoContainer{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: 300px;
+}
+.video{
+  width: 50%;
+  height: 50%;
+  margin: 50px 50px;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.videoCard{
+  background-color: white;
+}
+
+.btnVideo{
+  display: flex;
+  justify-content: end;
+  align-items: cen;
 }
