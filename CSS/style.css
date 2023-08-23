@@ -338,6 +338,9 @@ div.desc{
   background: rgb(100, 200, 255);
   cursor: pointer;
 }
+.formContact{
+  background-color: white;
+}
 
 /* Formato de la tabla*/
 
@@ -371,6 +374,13 @@ div.carousel-inner{
   font-size: 50px;
 }
 
+.carrouselTittle{
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* VIDEOS */
 .videoContainer{
@@ -396,3 +406,4 @@ div.carousel-inner{
   justify-content: end;
   align-items: cen;
 }
+
